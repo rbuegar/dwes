@@ -1,0 +1,31 @@
+1. Última versión de los servidores web y descripción de su arquitectura básica y mecanismos de extensión:
+Apache HTTP Server:
+Última versión: A septiembre de 2024, la última versión estable es la 2.4.57.
+Arquitectura básica: Apache es un servidor web modular y multiproceso, lo que significa que puede operar en diferentes modos de procesamiento de solicitudes (hilos, procesos o eventos). La arquitectura de Apache es basada en módulos, lo que permite a los administradores agregar y eliminar funcionalidades según las necesidades del servidor.
+Mecanismos de extensión: Apache permite el uso de módulos externos (como mod_php para PHP o mod_proxy para aplicaciones inversas). Estos módulos permiten que Apache sea altamente flexible y adaptable para soportar múltiples lenguajes de programación y tecnologías. Los módulos son cargados de manera dinámica, lo que significa que se pueden añadir sin recompilar el servidor.
+Internet Information Server (IIS):
+Última versión: La versión actual es IIS 10.0, que viene con Windows Server 2016 y Windows 10.
+Arquitectura básica: IIS está estrechamente integrado con el sistema operativo Windows y aprovecha sus funcionalidades de seguridad y gestión de procesos. Funciona bajo un modelo modular similar al de Apache, con componentes que pueden ser activados o desactivados según sea necesario. IIS soporta HTTP, HTTPS, FTP, SMTP y otros protocolos.
+Mecanismos de extensión: IIS utiliza "extensiones ISAPI" y módulos para soportar lenguajes como ASP.NET, PHP y más. También permite la integración con otros servicios de Microsoft como Active Directory y SQL Server, lo que facilita el desarrollo de aplicaciones empresariales.
+2. Evolución de un lenguaje de entorno del servidor: PHP
+PHP ha sido uno de los lenguajes más influyentes en el desarrollo web de lado del servidor. A continuación, se describe su evolución:
+
+PHP 1.0 (1995): Inicialmente conocido como "Personal Home Page Tools", PHP fue desarrollado por Rasmus Lerdorf para procesar formularios web y rastrear visitas. En esta etapa, era un conjunto de scripts Perl.
+PHP 3.0 (1998): PHP se reescribió por completo, lo que permitió que el lenguaje se volviera mucho más flexible y se usara para desarrollar aplicaciones dinámicas. PHP adoptó la sintaxis del lenguaje C y se integró mejor con bases de datos como MySQL.
+PHP 4.0 (2000): Introdujo el "Zend Engine", lo que mejoró significativamente el rendimiento y la estabilidad del lenguaje. PHP 4 añadió soporte para la programación orientada a objetos en un nivel básico.
+PHP 5.0 (2004): Supuso una revolución en el lenguaje, con una implementación completa de la programación orientada a objetos (POO), mejor manejo de excepciones y nuevas funcionalidades como el motor de bases de datos PDO.
+PHP 7.0 (2015): Tras la transición de PHP 6, que nunca se lanzó oficialmente, PHP 7 trajo mejoras sustanciales en rendimiento, eliminó muchas características obsoletas y añadió nuevas como "spaceship operator", "type declarations" y "scalar type hints".
+PHP 8.0 (2020): PHP 8 introdujo el compilador JIT (Just-In-Time), que mejora el rendimiento en ciertas aplicaciones. También añadió nuevas funcionalidades como match expressions, atributos, y más mejoras en el sistema de tipos.
+Influencias recibidas:
+
+PHP ha sido influenciado por lenguajes como Perl, C y C++. Su sintaxis es parecida a la de C, y muchas de sus funcionalidades de manejo de cadenas y expresiones regulares provienen de Perl.
+Influencias ejercidas:
+
+PHP ha influenciado el desarrollo de otros lenguajes como Hack (una variante de PHP utilizada por Facebook) y en general, muchos sistemas de gestión de contenido (CMS) como WordPress y Joomla se basan en PHP, haciendo que su ecosistema sea clave en el desarrollo web.
+3. Extensibilidad de herramientas de programación web: Google Web Server (GWS)
+El Google Web Server (GWS) es un servidor utilizado internamente por Google para alojar sus propios servicios web. Aunque GWS no está disponible públicamente, se sabe que es un servidor altamente personalizado basado en Nginx y otros componentes propietarios.
+
+Los editores de programación web utilizados en la construcción de aplicaciones que se despliegan en servidores como GWS son extensibles a través de plugins y módulos. Algunos editores conocidos incluyen Visual Studio Code, Sublime Text, y Atom. Estos editores permiten la instalación de extensiones para mejorar la experiencia de desarrollo web.
+
+Ejemplo: Visual Studio Code (VS Code)
+Métodos de extensión: VS Code ofrece una arquitectura extensible mediante la instalación de extensiones desde el marketplace. Los desarrolladores pueden crear sus propias extensiones usando JavaScript o TypeScript. Las extensiones pueden modificar el comportamiento del editor, añadir nuevas funcionalidades como linters, autocompletado para diferentes lenguajes, integración con sistemas de control de versiones, depuración y mucho más.
